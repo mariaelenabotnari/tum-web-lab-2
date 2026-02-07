@@ -1,0 +1,83 @@
+.features {
+    padding: 100px 0;
+    background-color: #fafaf8;
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.features-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-navy);
+    margin-bottom: 15px;
+}
+
+.features-header p {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 32px;
+    padding: 20px 60px;
+    overflow: hidden;
+    min-height: 300px;
+    color: white;
+}
+
+.feature-text {
+    flex: 1;
+    max-width: 450px;
+}
+
+.feature-text .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.feature-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.feature-image-placeholder {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.feature-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transform: translateY(20px);
+}
+
+.brand-red { background-color: #491432; }
+.brand-blue { background-color: #3B38AE; }
+.brand-pink { background-color: #F6C8E8; color: #491432; }
+
+.brand-pink .feature-text p, .brand-pink .feature-text h3 {
+    color: #491432;
+}
