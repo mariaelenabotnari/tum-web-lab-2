@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --dark-navy: #090825;
+    --brand-blue: #6475E9;
+    --accent-coral: #ff7956;
+    --white: #ffffff;
+    --gray-light: #f9fafb;
+    --cream: #f9f7f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Athletics', 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    color: var(--dark-navy);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background-color: var(--brand-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4F5ED1;
+    transform: translateY(-2px);
+}
