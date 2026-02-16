@@ -1025,8 +1025,20 @@ body:has(.popup-overlay:target) {
         text-align: center;
     }
 
+    .footer-logo-text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     .footer-logo-text img {
         height: 80px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .footer-column h4 {
