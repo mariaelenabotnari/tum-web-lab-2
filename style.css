@@ -632,6 +632,53 @@ body:has(.popup-overlay:target) {
     }
 }
 
+/* Mobile-only Highlights */
+.mobile-only-highlights {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .mobile-only-highlights {
+        display: block;
+        background: #ececec;
+        padding: 18px 0 17px;
+        margin-top: -40px;
+    }
+
+    .mhi-card {
+        background: #ffffff;
+        border: 1px solid rgba(9, 8, 37, 0.08);
+        box-shadow: 0 14px 35px rgba(9, 8, 37, 0.10);
+        border-radius: 20px;
+        padding: 12px 14px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .mhi-item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mhi-item span {
+        font-size: 22px;
+        color: #6475E9;
+    }
+
+    .mhi-item p {
+        margin: 0;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #090825;
+        line-height: 1.1;
+    }
+}
+
 /* PORTFOLIO */
 
 .gallery {
