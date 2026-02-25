@@ -1038,8 +1038,6 @@ body:has(.popup-overlay:target) {
     }
 }
 
-/* MASCOT */
-
 .mascot {
     position: fixed;
     right: 22px;
@@ -1050,7 +1048,15 @@ body:has(.popup-overlay:target) {
     transform: translateY(18px) scale(0.96);
     pointer-events: none;
 
-    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.9, 0.2, 1);
+    animation: mascotIntro 0.6s cubic-bezier(0.2, 0.9, 0.2, 1) 2s forwards;
+}
+
+@keyframes mascotIntro {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+    }
 }
 
 .mascot.is-visible {
